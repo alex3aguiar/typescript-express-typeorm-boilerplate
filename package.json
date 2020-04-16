@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "build": "tsc -v && npm run clean && npm run tslint && npm run build-ts",
     "build-ts": "tsc",
-    "watch": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
+    "watch": "nodemon --exec ts-node src/index.ts",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "tslint:fix": "tslint --fix src/**/*.{ts,js}",
     "test": "NODE_ENV=test mocha -r ts-node/register src/tests/*.spec.ts --exit"
@@ -20,6 +20,7 @@
     "cors": "^2.8.4",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "express-routes-visualizer": "^0.2.4",
     "express-status-monitor": "^1.1.5",
     "express-validator": "^5.3.0",
     "helmet": "^3.13.0",
@@ -30,6 +31,9 @@
     "passport-jwt": "^4.0.0",
     "pg": "^7.4.3",
     "reflect-metadata": "^0.1.12",
+    "sqlite3": "^4.1.1",
+    "swagger-express-ts": "^1.0.1",
+    "tsoa": "^2.5.13",
     "typeorm": "^0.2.7",
     "winston": "^3.1.0"
   },

@@ -1,5 +1,7 @@
 import * as HttpStatus from 'http-status-codes';
 import { Request, Response, NextFunction } from 'express';
+import { Router } from 'express';
+const router: Router = Router();
 
 /**
  * Error response middleware for 404 not found.
