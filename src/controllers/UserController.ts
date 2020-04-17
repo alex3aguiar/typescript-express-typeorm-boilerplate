@@ -1,5 +1,5 @@
 import { Controller } from '../decorators/Controller';
-import { Get } from '../decorators/Get';
+import { Get } from "../decorators/Get.1";
 import { Request, Response } from 'express';
 
 @Controller('/user')
